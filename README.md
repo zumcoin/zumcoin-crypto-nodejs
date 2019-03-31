@@ -55,7 +55,7 @@ Checks to verify that a public key is valid.
 ```javascript
 const publicKey = 
   '0e5dc2885517e4aff187804e7eac350120a920108388c9740361ab96193b1773'
-const valid = ZumCoinCrypo.checkKey(publicKey)
+const valid = ZumCoinCrypto.checkKey(publicKey)
 ```
 
 Returns a boolean value of true/false.
@@ -69,7 +69,7 @@ const transactionPublicKey =
   '0dc7837fdf24e61194e424dd8ac8a3d297de8056751a2627e5204f892b6bdb58'
 const signature = 
   'cfaeecf3bd68746b27826769b621b52518a9bed2c9ae46c97ac26a7d2b72110e'
-const valid = ZumCoinCrypo.checkSignature(
+const valid = ZumCoinCrypto.checkSignature(
   prefixHash, transactionPublicKey, signature
 )
 ```
@@ -153,7 +153,7 @@ Returns the key image. Ex:
 Generates a random public and secret key pair
 
 ```javascript
-const keys = ZumCoinCrypo.generateKeys()
+const keys = ZumCoinCrypto.generateKeys()
 ```
 
 Example result below:
@@ -225,7 +225,7 @@ const publicKey =
   '0dc7837fdf24e61194e424dd8ac8a3d297de8056751a2627e5204f892b6bdb58'
 const secretKey = 
   'cfaeecf3bd68746b27826769b621b52518a9bed2c9ae46c97ac26a7d2b72110e'
-const signature = ZumCoinCrypo.generateSignature(
+const signature = ZumCoinCrypto.generateSignature(
   prefixHash, publicKey, secretKey
 )
 ```
