@@ -1,0 +1,28 @@
+{
+  "name": "zumcoin-crypto",
+  "version": "1.2.0",
+  "description": "Node C++ Addon for ZumCoin Cryptographic Functions",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-gyp build",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zumcoin/zumcoin-crypto-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zumcoin/zumcoin-crypto-nodejs/issues"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "engineStrict": true,
+  "homepage": "https://github.com/zumcoin/zumcoin-crypto-nodejs#readme",
+  "author": "ZumCoin Developers <devs@zumcoin.org>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "bindings": "^1.4.0",
+    "nan": "^2.12.1"
+  }
+}
